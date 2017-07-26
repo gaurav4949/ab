@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.gameface.fragment.EventScheduleFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        >
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Event Name"
+
+            android:background="@drawable/input_event_name_bg"
+            android:padding="10dp"
+            android:gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="From"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="4.5">
+
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/calender"
+                        android:layout_weight="0.5"
+                        />
+
+                    <TextView
+                        android:id="@+id/from_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="June 25,2016"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/from_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="08:00"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:weightSum="4.5">
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="0dp"
+                android:src="@drawable/calender"
+                android:layout_weight="0.5"
+                />
+
+            <TextView
+                android:id="@+id/to_date"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:text="June 25,2016"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/to_time"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                android:text="08:00"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:weightSum="4.5"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:src="@drawable/location"
+                android:layout_weight="0.5"
+                />
+
+            <Spinner
+                android:id="@+id/location_spinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/input_event_name_bg"
+            android:layout_marginTop="20dp"
+            android:hint="Add Description"
+            android:gravity="start"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/save_bt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/login_bt_bg"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/white"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            />
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

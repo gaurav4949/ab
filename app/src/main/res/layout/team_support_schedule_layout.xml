@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+
+            android:id="@+id/Game_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:layout_marginTop="10dp"
+            android:text="Game One"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/opponent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Game_no"
+            android:layout_marginTop="4dp"
+            android:text="Opponent: "
+            android:textColor="#bb434242"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/opponent_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Game_no"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/opponent"
+            android:text="Steelers"
+            android:textColor="#bb434242"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textview_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/opponent"
+            android:layout_marginTop="3dp"
+            android:text="2710 Pike,North Little Roc,Ar 72218"
+            android:textColor="#bb434242"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textview_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_address"
+            android:layout_marginTop="3dp"
+            android:drawableRight="@drawable/sb_bg"
+            android:text="07.23.2016"
+            android:textColor="#bb434242"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/textview_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_address"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/textview_date"
+            android:text="03:30"
+            android:textColor="#bb434242"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textview_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Edit"
+            android:textColor="#52a0fe"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textview_edit"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sb_bg"
+            android:gravity="center"
+            android:text="SB"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+</LinearLayout>

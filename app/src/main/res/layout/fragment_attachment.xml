@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.app.gameface.fragment.AttachmentFragment"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/chat_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_main"
+        android:layout_alignParentTop="true">
+
+
+        <LinearLayout
+            android:id="@+id/back_bt"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back"
+                android:layout_gravity="center"
+
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Game Face"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+
+            />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/attachment_tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            app:tabIndicatorColor="@color/color_main"
+            app:tabTextColor="@color/black"
+
+            app:tabSelectedTextColor="@color/color_main"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+        <FrameLayout
+            android:id="@+id/attachment_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>

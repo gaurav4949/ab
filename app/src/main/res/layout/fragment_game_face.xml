@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.gameface.fragment.GameFace">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:weightSum="3">
+
+
+        <RelativeLayout
+            android:id="@+id/my_groups"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#a7a7a7">
+
+            <ImageView
+                android:id="@+id/edit_profile_picture_bt"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/edit_profile_bt" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <ImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/profile" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Profile Picture"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+<!--
+        <RelativeLayout
+            android:id="@+id/free_agency"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#757575">
+
+            <ImageView
+                android:id="@+id/edit_right"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/edit_profile_bt" />
+
+            <ImageView
+                android:id="@+id/edit_left"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/edit_profile_bt" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+
+                >
+
+                <ImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:src="@drawable/right_face" />
+
+
+
+                <ImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:src="@drawable/left_face" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#444444">
+
+            <ImageView
+                android:id="@+id/edit_bt"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/edit_profile_bt" />
+
+
+                <ImageView
+
+                    android:id="@+id/imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/body"
+                    android:layout_centerInParent="true"/>
+
+
+
+
+
+    </RelativeLayout>-->
+    </LinearLayout>
+
+
+</LinearLayout>

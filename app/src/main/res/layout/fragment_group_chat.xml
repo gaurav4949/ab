@@ -1,0 +1,201 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.app.gameface.fragment.GroupChatFragment"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+        <RelativeLayout
+            android:id="@+id/chat_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/color_main"
+            android:layout_alignParentTop="true">
+
+
+            <LinearLayout
+                android:id="@+id/back_bt"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/back"
+                    android:layout_gravity="center"
+
+                    />
+
+            </LinearLayout>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/group_dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/dummy_group_img"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/back_bt"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Group Name"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+
+                />
+            <TextView
+                android:id="@+id/matchup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="MatchUps"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:id="@+id/week_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/week_header_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Week"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/down_arrow"
+                    android:layout_marginLeft="5dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/group_settings"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                >
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/chat_menu"
+                />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/delete_bt"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/delet_bt"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/edit_text"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+
+
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Edit"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/chat_tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            app:tabIndicatorColor="@color/color_main"
+            app:tabTextColor="@color/black"
+            app:tabSelectedTextColor="@color/color_main"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_below="@id/chat_top_layout"/>
+
+
+       <!-- <android.support.v7.widget.RecyclerView
+            android:id="@+id/chat_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/chat_tabLayout"
+            android:layout_above="@+id/chat_bottom_layout"/>-->
+
+
+        <FrameLayout
+            android:id="@+id/chat_internal_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/chat_tabLayout"
+            android:layout_above="@+id/chat_bottom_layout"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>

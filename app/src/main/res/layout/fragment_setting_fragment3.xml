@@ -1,0 +1,578 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.gameface.fragment.FootballFantasySettings"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_main">
+
+        <LinearLayout
+            android:id="@+id/done_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Done"
+                android:textColor="@color/white"
+
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/logout_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Logout"
+                android:textColor="@color/white"
+
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/mute_unmute_grp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5">
+
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="4">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mute/Unmute Group"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Press the above toggle button to turn on/off group notifications"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+
+                    />
+
+            </LinearLayout>
+
+
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch_Ringtone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                />
+
+        </LinearLayout>
+
+        <View
+
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_bg"
+            android:layout_below="@+id/mute_unmute_grp"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/group_members_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view1"
+            android:orientation="vertical"
+            >
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Group Members"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap to view list of uses in the group"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+        <View
+
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_bg"
+            android:layout_below="@+id/group_members_layout"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/change_grp_pic_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view2"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginTop="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change Group Picture"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tap on image to change group image"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:src="@drawable/default_pic"
+                android:layout_weight="1"
+                android:id="@+id/group_img"
+                android:clickable="true"/>
+
+
+
+        </LinearLayout>
+
+        <View
+
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_bg"
+            android:layout_below="@+id/change_grp_pic_layout"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/change_grp_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view3"
+            android:orientation="horizontal"
+            android:weightSum="4"
+
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="2">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change Group Name"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tap on change group name"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/group_name_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="XYZ group"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+
+
+        </LinearLayout>
+
+        <View
+
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_bg"
+            android:layout_below="@+id/change_grp_name_layout"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/change_your_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view4"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+
+            <LinearLayout
+                android:id="@+id/change_user_name_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change Your Name"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tap to change your name"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/user_name_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <View
+
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_bg"
+            android:layout_below="@+id/change_your_name_layout"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/add_members_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view5"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add members"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tap to add more members to group"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+
+            android:id="@+id/view6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_bg"
+            android:layout_below="@+id/add_members_layout"
+            android:layout_marginTop="10dp"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/update_record_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view6"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update Record"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tap to update the record"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+
+            android:id="@+id/view7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_bg"
+            android:layout_below="@+id/update_record_layout"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/add_organisation_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view7"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Organization Pin"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tap to add organization pin"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <View
+
+            android:id="@+id/view8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_bg"
+            android:layout_below="@+id/add_organisation_layout"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/assign_coach_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view8"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Assign Coach/Captain"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tap to Coach/Captain for this Group"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <View
+
+            android:id="@+id/view9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_bg"
+            android:layout_below="@+id/assign_coach_layout"
+            android:layout_marginTop="10dp"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/update_team_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view9"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update Team Age Group"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tap to update team age group"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="U4"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:id="@+id/age_grp_txt"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

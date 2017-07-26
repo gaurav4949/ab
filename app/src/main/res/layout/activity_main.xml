@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.gameface.activity.MainActivity"
+    android:orientation="vertical">
+
+   <RelativeLayout
+       android:id="@+id/main_title_layout"
+       android:layout_width="match_parent"
+       android:layout_height="45dp"
+       android:background="@color/color_main">
+
+
+       <RelativeLayout
+           android:id="@+id/top_left_ic_layout"
+           android:layout_width="45dp"
+           android:layout_height="45dp"
+           android:layout_centerVertical="true"
+           >
+           <ImageView
+               android:id="@+id/top_left_ic"
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:layout_centerInParent="true"
+              android:src="@drawable/back"/>
+
+       </RelativeLayout>
+      <TextView
+          android:id="@+id/title_text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true"
+          android:text="Game Face"
+          android:textSize="18sp"
+          android:textColor="@color/white"
+
+          />
+
+
+
+       <RelativeLayout
+           android:id="@+id/top_right_ic_layout"
+           android:layout_width="45dp"
+           android:layout_height="45dp"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           >
+           <ImageView
+                android:id="@+id/top_right_ic"
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:layout_centerInParent="true"
+               android:src="@mipmap/ic_back"/>
+
+       </RelativeLayout>
+       <RelativeLayout
+           android:id="@+id/refresh_bt"
+           android:layout_width="45dp"
+           android:layout_height="45dp"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           android:visibility="gone"
+           >
+           <ImageView
+
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:layout_centerInParent="true"
+               android:src="@drawable/refresh"/>
+
+       </RelativeLayout>
+
+
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/billboar_ads" />
+
+        <RelativeLayout
+            android:id="@+id/billboar_ads"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey_bg"
+
+            >
+            <android.support.v4.view.ViewPager
+                android:id="@+id/ads_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"/>
+            <LinearLayout
+                android:id="@+id/internal_ad_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:weightSum="4"
+                android:visibility="gone">
+
+                <ImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:paddingTop="15dp"
+                    android:src="@drawable/billboard_ads"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="Billboard Ads"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+                    </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

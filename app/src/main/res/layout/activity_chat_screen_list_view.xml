@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/header_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="12/12/2016"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/userChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_chat"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+
+        >
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:visibility="visible" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImg"
+            android:layout_width="40dp"
+
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/default_pic"
+
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@+id/userImg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_txt"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+
+                android:background="@drawable/white" />
+
+            <RelativeLayout
+                android:id="@+id/user_rel_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image_txt"
+                android:background="@drawable/textview_bg">
+
+                <TextView
+                    android:id="@+id/userTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:autoLink="web|email"
+                    android:text="Hello Hwz U Hello Hwz U Hello Hwz U Hello Hwz U Hello Hwz U Hello Hwz U Hello Hwz U"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/user_time_txt"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/userTxt"
+                    android:padding="3dp"
+                    android:visibility="gone"
+                    android:text="10AM"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/image_user"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_below="@+id/user"
+            android:layout_marginTop="10dp"
+android:visibility="gone"
+            android:background="@drawable/white" />
+
+        <RelativeLayout
+            android:id="@+id/userIm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user"
+            android:layout_toRightOf="@+id/image_user"
+
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textview_bg"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/progress1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/userImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/user_time_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userImage"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="15dp"
+                android:padding="2dp"
+                android:text="10AM"
+                android:textSize="10sp"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frndChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/userChat"
+        android:layout_alignRight="@+id/userChat"
+        android:layout_alignEnd="@+id/userChat"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/container_frnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+            >
+
+            <RelativeLayout
+                android:id="@+id/frnd_container_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_alignParentRight="true">
+
+                <ProgressBar
+                    android:id="@+id/progress2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/frndImg"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:visibility="visible"
+
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/frnd_container_new"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/frnd_txt"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/chatcorner"
+
+                    />
+                <RelativeLayout
+                    android:id="@+id/frnd_rel_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/frnd_txt"
+                    android:background="@drawable/textview_bg_other">
+
+                    <TextView
+                        android:id="@+id/frndTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Hello Hwz U"
+                        android:autoLink="web|email"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/frnd_time_txt"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/frndTxt"
+                        android:visibility="gone"
+                        android:padding="3dp"
+                        android:text="10AM"
+                        android:textSize="10sp" />
+                    />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/frndIm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container_frnd"
+            android:layout_marginTop="10dp"
+
+            android:background="@drawable/textview_bg_other"
+
+            android:padding="5dp"
+
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/progress3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/frndImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+
+                android:layout_centerInParent="true"
+                android:visibility="visible"></ImageView>
+
+            <TextView
+                android:id="@+id/frnd_time_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frndImage"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="15dp"
+                android:padding="2dp"
+                android:visibility="gone"
+                android:text="10AM"
+                android:textSize="10sp" />
+            />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

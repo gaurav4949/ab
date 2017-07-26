@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.gameface.fragment.BillBoardAds">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Billboard Ads Menu"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/color_main"
+            android:gravity="center"
+            android:text="Click here to become Game Face Sponsors"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+            <Spinner
+            android:id="@+id/ads_categogry_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:prompt="@string/spinner_prompt"
+            />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/ads_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

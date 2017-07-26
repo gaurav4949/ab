@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.gameface.fragment.FootballFantasyMatchups"
+   >
+
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:id="@+id/matchup_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e4e9ed"
+        android:layout_above="@+id/submit_bt"
+
+        />
+    <Button
+        android:id="@+id/submit_bt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:background="@color/color_main"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+
+        />
+
+</RelativeLayout>

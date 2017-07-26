@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    
+    <LinearLayout
+        android:id="@+id/group_chat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="2dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"/>
+        
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/group_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:src="@drawable/default_pic"
+
+            />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Group Name"
+                android:textColor="@color/black"
+
+                />
+
+            <TextView
+                android:id="@+id/group_chat_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1/07/2017"
+                android:textColor="@color/black"
+                android:layout_alignParentRight="true"
+                android:textSize="12sp"
+
+                />
+
+            <TextView
+                android:id="@+id/group_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Group Type"
+                android:textColor="@color/black"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/group_chat_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="10"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/chat_count_bg"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                />
+
+
+        </RelativeLayout>
+
+        
+        
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/grey_bg"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">GameFace</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Login Screen strings-->
+
+
+    <string name="hint_email">Email Address</string>
+    <string name="hint_password">Password</string>
+    <string name="login_bt">Log In</string>
+    <string name="forgot_password_txt">Forgot Password?</string>
+    <string name="fb_login_bt">Login with Facebook</string>
+    <string name="sign_up_email">Sign Up with Email</string>
+    <string name="aggrement_text">By tapping \"Log In\" you agree to the</string>
+    <string name="facebook_app_id">2116731528553925</string>
+    <string name="fb_login_protocol_scheme">fb2116731528553925</string>
+
+
+    <string name="aggrement_text1">By tapping \"Sign Up\" you agree to the</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="and">and</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <!-- Login Screen strings-->
+
+
+    <!-- SignUp Screen strings-->
+    <string name="hint_username">User Name</string>
+    <string name="code">Code</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="sign_up_bt">Sign Up</string>
+
+
+    <!-- SignUp Screen strings-->
+
+
+    <!-- Forgot Password-->
+
+    <string name="forgot_password">Forgot Your Password ?</string>
+    <string name="enter_email_txt">Enter your email address below to reset you password.</string>
+    <string name="submit_bt">Submit</string>
+    <string name="return_login">Return to Log in</string>
+
+
+    <!-- Home Screen-->
+
+
+    <string name="main_menu_txt">Main Menu</string>
+
+
+    <!--Create Group Screen-->
+
+    <string name="group_name_txt">Group Name</string>
+    <string name="type_grup_name">Type Group Name</string>
+    <string name="grup_type_txt">What kind of group are you trying to create?</string>
+    <string name="general_group_bt">General Group</string>
+    <string name="team_sport_bt">Team Sport Group</string>
+    <string name="fantasy_football_bt">Fantasy Football Group</string>
+
+    <string name="spinner_prompt">Featured Sponsers or View Catergories</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyA_YDyethfHAfSauWwXKNSvgEs2MIT6blk</string>
+
+
+</resources>

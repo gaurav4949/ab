@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.gameface.fragment.OrganisationPin"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+        <TextView
+            android:id="@+id/main_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Connect Team With Organization"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:id="@+id/text_enter_pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Enter Pin"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/main_text"/>
+
+
+
+        
+        <EditText
+            android:id="@+id/input_pin"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:inputType="number"
+            android:layout_below="@id/text_enter_pin"
+
+
+            />
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="6"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/input_pin"
+            >
+
+
+            <ImageView
+                android:id="@+id/pin_1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/pin_bg"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:id="@+id/pin_2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/pin_bg"
+                />
+            <ImageView
+                android:id="@+id/pin_3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/pin_bg" />
+            <ImageView
+                android:id="@+id/pin_4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/pin_bg" />
+            <ImageView
+                android:id="@+id/pin_5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/pin_bg"
+               />
+            <ImageView
+                android:id="@+id/pin_6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/pin_bg"
+                />
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/text_organization_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Organization Name"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/linear_layout"/>
+
+
+        <EditText
+            android:id="@+id/input_organisation_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:hint="Link Team"
+            android:gravity="center"
+            android:background="@drawable/organization_name_bg"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColorHint="#919497"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/text_organization_name"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            >
+
+
+            <Button
+                android:id="@+id/reset_bt"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Reset"
+                android:textAllCaps="false"
+                android:background="@drawable/organization_name_bg"
+                />
+
+            <Button
+                android:id="@+id/submit_bt"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:background="@drawable/login_bt_bg"
+                android:layout_marginLeft="10dp"
+                />
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
